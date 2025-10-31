@@ -1,0 +1,32 @@
+!DOCTYPE html
+html lang=tr
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleKonuşmayı Yazıya Döktitle
+    link rel=stylesheet href=style.css
+head
+body
+
+    div class=container
+        h2Konuşmayı Yazıya Dökme Aracıh2
+        pDil seçin ve Konuşmayı Başlat düğmesine basın.p
+
+        select id=languageSelect
+            option value=tr-TRTürkçeoption
+            option value=en-USİngilizce (ABD)option
+        select
+
+        div class=buttons
+            button id=startButtonKonuşmayı Başlatbutton
+            button id=stopButtonDurdurbutton
+        div
+        
+        textarea id=output rows=10 placeholder=Konuşmanız buraya yazılacak...textarea
+        
+        div id=statusDurum Beklemedediv
+    div
+
+    script src=script.jsscript
+body
+html
